@@ -574,7 +574,7 @@ body{
 /* Start About Area 3 */
 .about-area-3{
     width: 100%;
-    height: 70vh;
+    height: 100%;
     background-image: url(../img/gallery/section_bg03.png);
     background-size: cover;
     background-position: center center;
@@ -1223,18 +1223,9 @@ footer p{
     .about-low-area .about-img{
         margin-top: 37px
     }
-    .about-low-area img{
-        z-index: 999;
-        position: absolute;
-        width: 450px;
-        height: 600px
-    }
     .about-low-area .about-img .border-img{
-        width: 450px;
-        height: 600px;
         margin: 20px 0;
         transform: translateX(20px);
-        z-index: 1;
     }
     .about-low-area .col-lg-6 .row .col-md-6{
         margin-bottom: 20px
@@ -1242,16 +1233,11 @@ footer p{
     .about-low-area .flat-icon{
         color: #e2550f;
         font-size: 40px;
-        /* margin-right: 20px; */
-        position: absolute;
-        top: -9px;
-        left: -47px
     }
     .about-low-area .single-caption{
         position: relative
     }
     .about-low-area .icon-caption{
-        color: rgba(255,255,255,0.5);
         font-size: 14px;
         margin-left: 19px
     }
@@ -1379,7 +1365,6 @@ footer p{
     /* Start About Area */
     .about-low-area{
         padding: 20px 0 0 0;
-        height: 1200px;
     }
     .about-low-area .sec{
         margin-top: 15px;
@@ -1399,31 +1384,19 @@ footer p{
         margin-top: 37px
     }
     .about-low-area img{
-        z-index: 999;
         left: 135px;
-        width: 450px;
-        height: 600px
     }
     .about-low-area .about-img .border-img{
-        width: 450px;
-        height: 600px;
         margin: 20px 0;
         transform: translateX(150px);
-        z-index: 1;
     }
     
     .about-low-area .flat-icon{
-        color: #e2550f;
-        font-size: 46px;
-        position: absolute;
+        font-size: 40px;
         top: -9px;
         left: -47px
     }
-    .about-low-area .single-caption{
-        position: relative
-    }
     .about-low-area .icon-caption{
-        color: rgba(255,255,255,0.5);
         font-size: 16px;
         margin-left: 26px
     }
@@ -1523,18 +1496,166 @@ footer p{
     /* End Footer */
 
 }
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    /* Start Navbar */
+    .navbar .navbar-brand{
+        margin-left: 0;
+    }
+    .navbar .navbar-nav{
+        margin-right: 40px
+    }
+    .navbar .navbar-collapse .nav-item{
+        padding-left: 20px
+    }
+    .navbar .navbar-collapse .nav-item .nav-link{
+        letter-spacing: 1px;
+    }
+    /* End Navbar*/
+
+
+    /* Start Header*/
+    .header .sub-desc{
+        top: 300px
+    }
+    .header .sub-desc h6{
+        font-size: 20px
+    }
+    .header .sub-desc h1{
+        font-size: 70px
+    }
+    .header .sub-desc p{
+        font-size: 18px;
+        padding-top: 20px
+    }
+    /* End Header*/
+
+
+    /* Start About Area */
+    .about-low-area{
+        padding-top: 20px;
+    }
+    .about-low-area .sec{
+        margin-top: 70px;
+    }
+    .about-low-area h4{
+        font-size: 20px;
+        padding-bottom: 10px
+    }
+    .about-low-area h3{
+        font-size: 47px;
+    }
+    .about-low-area .about-desc{
+        padding: 10px 0 30px;
+        font-size: 18px;
+    }
+    .about-low-area .about-img{
+        margin-top: 37px
+    }
+    .about-low-area img{
+        left: 0;
+    }
+    .about-low-area .about-img .border-img{
+        margin: 20px 0;
+        transform: translateX(20px);
+    }
+    .about-low-area .flat-icon{
+        font-size: 40px;
+    }
+    .about-low-area .icon-caption{
+        font-size: 14px;
+        margin-left: 26px
+    }
+    /* End About Area */
+
+
+    /* Start Gallery */
+    .gallery .tap-wrap .box-desc .gallery-desc{
+        top: 150px;
+        left: 0
+    }
+    /* End Gallery */
+
+
+    /* Start About Area 2  */
+    .about-area-2 .img-container img{
+        width: 100%;
+    }
+    .about-area-2 .about-content h3{
+        font-size: 47px
+    }
+    .about-area-2 .about-content p{
+        font-size: 18px
+    }
+    /* End About Area 2  */
+
+
+    /* Start Booking Area */
+    .booking-area img{
+        width: 100%;
+        height: 100%;
+    }
+    .booking-area .appointment{
+        margin: 60px 50px;
+        width: 90%
+    }
+    .booking-area .appointment form{
+        width:100%
+    }
+    .booking-area .appointment select{
+        border: none;
+        width: 250px;
+        height: 65px;
+        padding: 0 30px
+    }
+    .booking-area .appointment input[type="date"], 
+    .booking-area .appointment input[type="time"] {
+        border: none;
+        padding: 16px 9px;
+        margin: 0 0 0 25px;
+        width: 250px;
+        border-radius: 4px
+    }
+    .booking-area .appointment a{
+        padding: 20px 20px;
+        margin-bottom: 10px
+    }
+    /* End Booking Area */
+
+
+    /* Start About Area 3 */
+    .about-area-3 .about3-container{
+        margin-top: 80px
+    }
+    .about-area-3 h3{
+        font-size: 38px;
+    }
+    .about-area-3 form{
+        padding: 50px
+    }
+    .about-area-3 form input[type="text"]{
+        border: none;
+        width: 100%;
+        margin-left: -50px
+    }
+    /* End About Area 3 */
+
+    
+    /* Start News Area */
+    .news-area .news-card{
+        margin-bottom: 90px
+    }
+    .news-area .news-card .card-desc{
+        width: 75%;
+        left: 53px;
+    }
+    .news-area .news-card:last-of-type .card-desc{
+        width: 75%;
+        left: 53px
+    }
+    /* End News Area */
+
+
+    
+}
 
 /* End Resposive Website */
-
-
-
-
-/* Start About Page */
-/* .hero-about{
-    background-image: url(../img/hero/hero2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-} */
-/* End About Page */
