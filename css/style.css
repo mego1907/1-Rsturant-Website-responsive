@@ -1184,6 +1184,7 @@ footer p{
     /* Start Header*/
     .header img{
         height: 100%;
+        width: 100%;
         margin: 290px 0 100px;
     }
     .header .sub-desc{
@@ -1658,4 +1659,4 @@ footer p{
     
 }
 
-/* End Resposive Website */
+/* End Resposive Website */ 
