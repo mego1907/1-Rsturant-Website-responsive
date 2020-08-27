@@ -1176,6 +1176,13 @@ footer p{
         transform: translateX(10px);
         color: #ff5600
     }
+    .navbar .d-down-menu.active{
+        position: static;
+        margin-right: 0;
+    }
+    .navbar ul li{
+        margin-left: 4px
+    }
     .navbar .navbar-collapse .nav-button{
         margin: 8px;
     }
@@ -1214,7 +1221,7 @@ footer p{
         padding-bottom: 8px
     }
     .about-low-area h3{
-        font-size: 38px;
+        font-size: 25px;
     }
     .about-low-area .about-desc{
         padding: 5px 0 20px;
@@ -1265,8 +1272,11 @@ footer p{
     .about-area-2 .img-container img{
         width: 100%;
     }
+    .about-area-2 .about-content h5{
+        font-size: 18px
+    }
     .about-area-2 .about-content h3{
-        font-size: 38px
+        font-size: 24px
     }
     .about-area-2 .about-content p{
         font-size: 16px
@@ -1275,6 +1285,13 @@ footer p{
 
 
     /* Start Booking Area */
+    .booking-area h5{
+        font-size: 18px
+    }
+    .booking-area h2{
+        font-size: 30px;
+        padding-bottom: 40px
+    }
     .booking-area img{
         width: 100%;
         height: 100%;
@@ -1303,8 +1320,8 @@ footer p{
         border: 1px solid #ccc;
         width: 80%;
         border-radius: 4px;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        padding: 16px 5px;
+        margin: 0 auto 10px;
         
     }
     .booking-area .appointment a{
@@ -1314,10 +1331,28 @@ footer p{
     }
     /* End Booking Area */
 
+    /* Start Services Responsive Section */
+    .services-area h5{
+        font-size: 18px;
+        padding-bottom: 15px
+    }
+    .services-area h2{
+        font-size: 24px
+    }
+    .services-area .services-desc p{
+        font-size: 15px;
+    }
+    
+    /* End Services Responsive Section */
+
 
     /* Start About Area 3 */
+    .about-area-3 h5{
+        font-size: 18px
+    }
     .about-area-3 h3{
-        font-size: 38px;
+        font-size: 25px;
+        font-weight: bold;
     }
     .about-area-3 form{
         padding: 50px 0;
@@ -1333,6 +1368,12 @@ footer p{
 
     
     /* Start News Area */
+    .news-area h5{
+        font-size: 18px
+    }
+    .news-area h3{
+        font-size: 30px
+    }
     .news-area .news-card{
         margin-bottom: 90px
     }
@@ -1349,6 +1390,9 @@ footer p{
     /* Start Footer Responsive Section */
     footer .col-md-4 ul li img{
         width: 80px
+    }
+    footer .logo{
+        padding-bottom: 30px
     }
     /* End Footer Responsive Section */
 
@@ -1394,7 +1438,6 @@ footer p{
     /* Start About Area */
     .about-low-area{
         padding: 20px 0 0 0;
-        height: 146vh
     }
     .about-low-area .sec{
         margin-top: 15px;

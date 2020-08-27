@@ -23,8 +23,10 @@ for(let i = 0; i < navbarBtn.length; i++){
 window.addEventListener("scroll", () => {
     if(document.documentElement.scrollTop> 0){
         navbar.classList.add("scrolled");
+        navbar.classList.replace("navbar-light", "navbar-dark");
     } else{
         navbar.classList.remove("scrolled");
+        navbar.classList.replace("navbar-dark", "navbar-light");
     }
 })
 
