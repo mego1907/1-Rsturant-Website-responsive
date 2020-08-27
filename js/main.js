@@ -4,8 +4,6 @@ var navbar = document.querySelector(".navbar");
 var navbarBtn = document.querySelectorAll("ul li a");
 // Drop Down-Btn
 var dropBtn = document.querySelector("#dropdown-btn");
-// Drop Down Icon
-var dropIcon = document.querySelector(".navbar-nav .nav-link .fa-caret-up");
 // Drop Down Menu
 var dropMenu = document.getElementById("d-down-menu");
 
@@ -34,7 +32,6 @@ window.addEventListener("scroll", () => {
 // Drop Down
 dropBtn.addEventListener("click", () => {
     dropMenu.classList.toggle("active");
-    dropIcon.classList.toggle("active")
 })
 
 

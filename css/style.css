@@ -72,10 +72,6 @@ body{
 .navbar .nav-link .fas{
     padding-left: 5px;
 }
-.navbar .nav-link .fas.active{
-    transform: rotateX(180deg);
-    transition: transform 0.3s ease-in-out;
-}
 .navbar .d-down-menu{
     list-style: none;
     background-color: #364f6b;
@@ -91,14 +87,9 @@ body{
     display: inline-block;
     padding: 16px 10px
 }
-.navbar .d-down-menu .d-down-item:hover,
-.navbar .d-down-menu .d-down-item.active{
-    background-color: #ff5600;
-    color: #fff;
-}
 .navbar .d-down-menu .d-down-item:hover a,
 .navbar .d-down-menu .d-down-item.active a{
-    color: #fff
+    color: #ff5600
 }
 .navbar .d-down-menu.active{
     display: block
@@ -1095,18 +1086,20 @@ footer p{
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ff5600;
-    background-color: transparent
+    background-color: transparent;
+    color: #fff
 }
 .contact-section .col-lg-9 .contact-form form input{
     width: 100%;
     margin: 10px 0;
     padding: 15px;
     border: 1px solid #ff5600;
-    background-color: transparent
+    background-color: transparent;
+    color: #fff
 }
 .contact-section .col-lg-9 .contact-form form input::placeholder,
 .contact-section .col-lg-9 .contact-form form textarea::placeholder{
-    color: #eee
+    color: #ccc
 }
 .contact-section .col-lg-9 .contact-form form input:last-of-type{
     margin-bottom: 30px
@@ -1771,8 +1764,39 @@ footer p{
     .blog-area aside form .search-box input{
         width: 78%;
     }
+    .blog-area .newsletter-section{
+        padding-bottom: 20px
+    }
+}
+@media (min-width: 768px) {
+    .blog-area .row{
+        overflow: hidden
+    }
+    .blog-area aside form .search-box input{
+        width: 90%
+    }
+    .blog-area .newsletter-section{
+        padding-bottom: 20px
+    }
+}
+@media (min-width: 992px) {
+    .blog-area .blog-item .blog-item-img img{
+        width: 100%;
+        height: 100%
+    }
 }
 /* End Responsive Blog Page */
+
+/* Start Responsive Blog Details Page */
+@media (max-width: 767px) {
+    .blog-area{
+        overflow: hidden;
+    }
+    .blog-area aside .newsletter-section form a{
+        padding: 15px 78px;
+    }
+}
+/* End Responsive Blog Details Page */
 
 
 /* End Resposive Website */ 
