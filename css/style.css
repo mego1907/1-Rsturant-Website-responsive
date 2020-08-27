@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+/* Start Global Rules */
 *,
 *::before,
 *::after{
@@ -9,10 +11,10 @@
     margin: 0;
     box-sizing: border-box
 }
-
 body{
     font-family: 'Roboto', sans-serif;
 }
+/* End Global Rules */
 
 
 /* Start Navbar */
@@ -720,7 +722,7 @@ footer p{
 
 /* Start About Page */
 .hero-about{
-    margin-top: 70px;
+    margin-top: 75px;
     width: 100%;
     height: 550px;
     background-color: #222;
@@ -1211,7 +1213,7 @@ footer p{
     /* Start About Area */
     .about-low-area{
         padding: 20px;
-        height: 1200px;
+        height: 1070px;
     }
     .about-low-area .sec{
         margin-top: 15px;
@@ -1259,11 +1261,17 @@ footer p{
     /* Start Gallery */
     .gallery .tap-wrap .box-desc .gallery-desc{
         top: 180px;
-        left: 0px
+        left: 52px
+    }
+    .gallery .gallery-heading h5{
+        font-size: 18px
+    }
+    .gallery .gallery-heading h2{
+        font-size: 25px;
     }
     .gallery ul li{
         margin-left: 0;
-        font-size: 14px 
+        font-size: 15px 
     }
     /* End Gallery */
 
@@ -1437,7 +1445,8 @@ footer p{
 
     /* Start About Area */
     .about-low-area{
-        padding: 20px 0 0 0;
+        padding-top: 20px;
+        height: auto;
     }
     .about-low-area .sec{
         margin-top: 15px;
@@ -1564,7 +1573,7 @@ footer p{
 
     /* Start Footer */
     footer img{
-        width: 100px
+        width: 90px
     }
     /* End Footer */
 
@@ -1629,7 +1638,7 @@ footer p{
     }
     .about-low-area .about-img .border-img{
         margin: 20px 0;
-        transform: translateX(20px);
+        transform: translateX(3px);
     }
     .about-low-area .flat-icon{
         font-size: 40px;
@@ -1730,5 +1739,40 @@ footer p{
 
     
 }
+
+
+
+
+
+/* Start Resposive About Page */
+@media (max-width: 767px) {
+    .hero-about{
+        height: 235px
+    }
+}
+/* End Resposive About Page */
+
+/* Start Responsive Blog Page */
+@media (max-width: 767px) {
+    .blog-area .blog-item .blog-item-img img{
+        width: 100%;
+        height: 100%
+    }
+    .blog-area .blog-item .blog-item-img span{
+        padding: 10px 15px; 
+    }
+    .blog-area .blog-item .blog-item-img span h3{
+        font-size: 18px
+    }
+    .blog-area .blog-item .blog-item-img span p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .blog-area aside form .search-box input{
+        width: 78%;
+    }
+}
+/* End Responsive Blog Page */
+
 
 /* End Resposive Website */ 
