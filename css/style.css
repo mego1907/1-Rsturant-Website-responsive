@@ -1183,9 +1183,8 @@ footer p{
 
     /* Start Header*/
     .header img{
-        height: 100%;
+        height: 700px;
         width: 100%;
-        margin: 290px 0 100px;
     }
     .header .sub-desc{
         top: 200px
@@ -1194,10 +1193,10 @@ footer p{
         font-size: 18px
     }
     .header .sub-desc h1{
-        font-size: 50px
+        font-size: 30px
     }
     .header .sub-desc p{
-        font-size: 16px
+        font-size: 15px
     }
     /* End Header*/
 
@@ -1224,9 +1223,14 @@ footer p{
     .about-low-area .about-img{
         margin-top: 37px
     }
+    .about-low-area .about-img img{
+        left: 0;
+        width: 100%
+    }   
     .about-low-area .about-img .border-img{
         margin: 20px 0;
         transform: translateX(20px);
+        display: none
     }
     .about-low-area .col-lg-6 .row .col-md-6{
         margin-bottom: 20px
@@ -1248,7 +1252,11 @@ footer p{
     /* Start Gallery */
     .gallery .tap-wrap .box-desc .gallery-desc{
         top: 180px;
-        left: 150px
+        left: 0px
+    }
+    .gallery ul li{
+        margin-left: 0;
+        font-size: 14px 
     }
     /* End Gallery */
 
@@ -1272,31 +1280,37 @@ footer p{
         height: 100%;
     }
     .booking-area .appointment{
-        margin: 60px 0;
-        width: 100%
+        margin: 0;
+        width: 100%;
+        height: 300px
     }
     .booking-area .appointment form{
-        width:100%
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        
     }
     .booking-area .appointment select{
         border: 1px solid #ccc;
-        width: 100px;
-        height: 65px;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
     }
     .booking-area .appointment input[type="date"], 
     .booking-area .appointment input[type="time"] {
         border: 1px solid #ccc;
-        padding: 16px 2px;
-        margin: 0 0 0 10px;
-        width: 184px;
-        border-radius: 4px
-    }
-    .booking-area .appointment input[type="time"] {
-        width: 100px
+        width: 80%;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
     }
     .booking-area .appointment a{
-        padding: 20px 10px;
-        margin: 0 0 0 10px
+        margin: 0px;
+        border-radius: 4px;
+
     }
     /* End Booking Area */
 
@@ -1306,10 +1320,14 @@ footer p{
         font-size: 38px;
     }
     .about-area-3 form{
-        padding: 50px
+        padding: 50px 0;
     }
     .about-area-3 form input[type="text"]{
-        border: 1px solid #ff5600
+        border: 1px solid #ff5600;
+        width: 80%;
+    }
+    .about-area-3 form input[type="submit"]{
+        padding: 20px 5px;
     }
     /* End About Area 3 */
 
@@ -1318,11 +1336,21 @@ footer p{
     .news-area .news-card{
         margin-bottom: 90px
     }
+    .news-area .news-card img{
+        width: 100%
+    }
     .news-area .news-card .card-desc{
-        width: 55%;
-        left: 125px;
+        width: 70%;
+        left: 60px;
     }
     /* End News Area */
+
+
+    /* Start Footer Responsive Section */
+    footer .col-md-4 ul li img{
+        width: 80px
+    }
+    /* End Footer Responsive Section */
 
 }
 @media (min-width: 768px) {
@@ -1366,6 +1394,7 @@ footer p{
     /* Start About Area */
     .about-low-area{
         padding: 20px 0 0 0;
+        height: 146vh
     }
     .about-low-area .sec{
         margin-top: 15px;
