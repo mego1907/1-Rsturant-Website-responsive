@@ -719,7 +719,6 @@ footer p{
 
 /* Start About Page */
 .hero-about{
-    margin-top: 75px;
     width: 100%;
     height: 550px;
     background-image: url(../img/hero/hero2.png);
@@ -727,14 +726,16 @@ footer p{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 160px;
 }
+
 .hero-about .hero-about-heading{
     padding: 100px 0 0 20px;
     font-size: 47px;
     font-weight: bold;
     color: #0b1a2a;
 }
+
+
 .hero-about .hero-about-heading::after{
     content: '';
     width: 38px;
@@ -1547,7 +1548,6 @@ footer p{
     }
     .booking-area .appointment select{
         border: 1px solid #ccc;
-        width: 200px;
         height: 65px;
     }
     .booking-area .appointment input[type="date"], 
