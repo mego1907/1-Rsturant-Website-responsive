@@ -722,7 +722,6 @@ footer p{
     margin-top: 75px;
     width: 100%;
     height: 550px;
-    background-color: #222;
     background-image: url(../img/hero/hero2.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -1771,7 +1770,7 @@ footer p{
 /* Start Resposive About Page */
 @media (max-width: 767px) {
     .hero-about{
-        background-image: url(../img/hero/bg-in-phone.jpg);
+        background-image: url(../img/hero/bg-mobile.jpg);
         background-size: cover;
         background-position: right center;
         margin: 0;
