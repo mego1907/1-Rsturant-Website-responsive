@@ -94,13 +94,49 @@ body{
 .navbar .d-down-menu.active{
     display: block
 }
+
+
+/* Start Resposive Navbar */
+@media (max-width: 767px) {
+    .navbar .navbar-collapse{
+        background-color: #0b1a2a;
+        padding-bottom: 20px
+    }
+    .navbar .navbar-nav{
+        padding-bottom: 16px;
+        margin: 0
+    }
+    .navbar .navbar-collapse .nav-item{
+        padding: 8px
+    }
+    .navbar .navbar-collapse .nav-item .nav-link{
+        padding: 5px;
+        color: #fff
+    }
+    .navbar .navbar-collapse .nav-item:hover .nav-link{
+        transform: translateX(10px);
+        color: #ff5600
+    }
+    .navbar .d-down-menu.active{
+        position: static;
+        margin-right: 0;
+    }
+    .navbar ul li{
+        margin-left: 4px
+    }
+    .navbar .navbar-collapse .nav-button{
+        margin: 8px;
+    }
+}
 /* End Navbar */
 
 
 
 /* Start Header */
 .header{
-    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../img/hero/h1_hero.png);
     background-size: cover;
     background-position: center center;
@@ -115,8 +151,10 @@ body{
 } */
 .header .sub-desc{
     z-index: 9;
-    position: absolute;
-    top: 300px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .header .sub-desc h6{
     color: #e2550f;
@@ -150,6 +188,28 @@ body{
 .header .sub-desc button:hover{
     color: #fff;
     background-color: #ff5600;
+}
+
+/* Start Resposive header */
+@media (max-width: 767px) {
+    .header{
+        background-image: url(../img/hero/bg-mobile.jpg);
+        height: 700px;
+        max-width: 100%;
+        background-position: left center;
+    }
+    .header .sub-desc h6{
+        font-size: 16px
+    }
+    .header .sub-desc h1{
+        font-size: 35px
+    }
+    .header .sub-desc p{
+        font-size: 15px
+    }
+    .header .sub-desc button{
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
 /* End Header */
 
@@ -220,6 +280,54 @@ body{
     color: rgba(255,255,255,0.5);
     font-size: 14px;
     margin-left: 19px
+}
+
+/* Start Resposive About Area */
+@media (max-width: 767px) {
+    .about-low-area{
+        padding: 20px;
+        height: 1070px;
+    }
+    .about-low-area .sec{
+        margin-top: 15px;
+    }
+    .about-low-area h4{
+        font-size: 16px;
+        padding-bottom: 8px
+    }
+    .about-low-area h3{
+        font-size: 25px;
+    }
+    .about-low-area .about-desc{
+        padding: 5px 0 20px;
+        font-size: 16px;
+    }
+    .about-low-area .about-img{
+        margin-top: 37px
+    }
+    .about-low-area .about-img img{
+        left: 0;
+        width: 100%
+    }   
+    .about-low-area .about-img .border-img{
+        margin: 20px 0;
+        transform: translateX(20px);
+        display: none
+    }
+    .about-low-area .col-lg-6 .row .col-md-6{
+        margin-bottom: 20px
+    }
+    .about-low-area .flat-icon{
+        color: #e2550f;
+        font-size: 40px;
+    }
+    .about-low-area .single-caption{
+        position: relative
+    }
+    .about-low-area .icon-caption{
+        font-size: 14px;
+        margin-left: 19px
+    }
 }
 /* End About Area */
 
@@ -402,6 +510,28 @@ body{
 .dinner .box:last-of-type{
     background-image: url(../img/gallery/gallery2.png);
 }
+
+/* Start Resposive Gallery */
+@media (max-width: 767px) {
+    .gallery .gallery-heading{
+        margin-top: 40px;
+    }
+    .gallery .tap-wrap .box-desc .gallery-desc{
+        top: 180px;
+        left: 52px
+    }
+    .gallery .gallery-heading h5{
+        font-size: 18px
+    }
+    .gallery .gallery-heading h2{
+        font-size: 25px;
+    }
+    .gallery ul li{
+        margin-left: 0;
+        font-size: 15px;
+        padding: 8px 14px; 
+    }
+}
 /* End Gallery */
 
 
@@ -456,6 +586,25 @@ body{
 .about-area-2 .about-content a:hover{
     background-color: #e2550f;
     color: #fff;
+}
+
+/* Start Responsive About Area 2 */
+@media (max-width: 767px) {
+    .about-area-2 .img-container img{
+        width: 100%;
+    }
+    .about-area-2 .about-content{
+        padding: 40px 20px;
+    }
+    .about-area-2 .about-content h5{
+        font-size: 18px
+    }
+    .about-area-2 .about-content h3{
+        font-size: 24px
+    }
+    .about-area-2 .about-content p{
+        font-size: 16px
+    }
 }
 /* End About area 2 */
 
@@ -528,6 +677,57 @@ body{
     padding: 13px 25px;
     position: relative
 }
+
+
+/* Start Resposive Booking Area */
+@media (max-width: 767px) {
+    .booking-area .booking-area-heading{
+        padding-top: 40px;
+    }
+    .booking-area h5{
+        font-size: 18px
+    }
+    .booking-area h2{
+        font-size: 30px;
+        padding-bottom: 40px
+    }
+    .booking-area img{
+        width: 100%;
+        height: 100%;
+    }
+    .booking-area .appointment{
+        margin: 0;
+        width: 100%;
+        height: 350px
+    }
+    .booking-area .appointment form{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .booking-area .appointment select{
+        border: 1px solid #ccc;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        
+    }
+    .booking-area .appointment input[type="date"], 
+    .booking-area .appointment input[type="time"] {
+        border: 1px solid #ccc;
+        width: 80%;
+        border-radius: 4px;
+        padding: 16px 5px;
+        margin: 0 auto 10px;
+        
+    }
+    .booking-area .appointment a{
+        margin: 0px;
+        border-radius: 4px;
+    }
+}
 /* End booking Area */
 
 
@@ -564,6 +764,26 @@ body{
     color: rgba(255,255,255, 0.4);
     font-size: 16px;
     line-height: 30px;
+}
+
+/* Start Resposive Services */
+@media (max-width: 767px) {
+    .services-area{
+        padding: 45px 0;
+    }
+    .services-area .services-content{
+        margin: 30px 0 0;
+    }
+    .services-area h5{
+        font-size: 18px;
+        padding-bottom: 15px
+    }
+    .services-area h2{
+        font-size: 24px
+    }
+    .services-area .services-desc p{
+        font-size: 15px;
+    }
 }
 /* End Services Area */
 
@@ -612,6 +832,30 @@ body{
 }
 .about-area-3 form input::placeholder{
     padding-left: 10px
+}
+
+/* Start Resposive About Area 3 */
+@media (max-width: 767px) {
+    .about-area-3 .about3-container{
+        margin-top: 40px;
+    }
+    .about-area-3 h5{
+        font-size: 18px
+    }
+    .about-area-3 h3{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .about-area-3 form{
+        padding: 50px 0;
+    }
+    .about-area-3 form input[type="text"]{
+        border: 1px solid #ff5600;
+        width: 80%;
+    }
+    .about-area-3 form input[type="submit"]{
+        padding: 20px 5px;
+    }
 }
 /* End About Area 3 */
 
@@ -670,6 +914,28 @@ body{
 .news-area .news-card:hover .card-desc h6{
     color: #ddd
 }
+
+/* Start Resposive News Area */
+@media (max-width: 767px) {
+    .news-area .news-heading{
+        padding: 40px 0;
+    }
+    .news-area h5{
+        font-size: 18px
+    }
+    .news-area h3{
+        font-size: 30px
+    }
+    .news-area .news-card{
+        margin-bottom: 90px
+    }
+    .news-area .news-card img{
+        width: 100%
+    }
+    .news-area .news-card .card-desc{
+        width: 70%;
+        left: 60px;
+    }
 /* End News Area */
 
 
@@ -712,6 +978,19 @@ footer p{
     text-align: center;
     padding: 50px 10px;
     margin: 0
+}
+
+/* Start Resposive Footer */
+@media (max-width: 767px) {
+    footer .row{
+        padding-top: 40px;
+    }
+    footer .col-md-4 ul li img{
+        width: 80px
+    }
+    footer .logo{
+        padding-bottom: 30px
+    }
 }
 /* End Footer Section */
 
@@ -1155,284 +1434,7 @@ footer p{
 
 
 
-/* Start Resposive Website */
-@media (max-width: 767px) {
-    /* Start Navbar */
-    .navbar .navbar-collapse{
-        background-color: #0b1a2a;
-        padding-bottom: 20px
-    }
-    .navbar .navbar-nav{
-        padding-bottom: 16px;
-        margin: 0
-    }
-    .navbar .navbar-collapse .nav-item{
-        padding: 8px
-    }
-    .navbar .navbar-collapse .nav-item .nav-link{
-        padding: 5px;
-        color: #fff
-    }
-    .navbar .navbar-collapse .nav-item:hover .nav-link{
-        transform: translateX(10px);
-        color: #ff5600
-    }
-    .navbar .d-down-menu.active{
-        position: static;
-        margin-right: 0;
-    }
-    .navbar ul li{
-        margin-left: 4px
-    }
-    .navbar .navbar-collapse .nav-button{
-        margin: 8px;
-    }
-    /* End Navbar*/
 
-    /* Start Header*/
-    .header{
-        background-image: url(../img/hero/bg-mobile.jpg);
-        height: 700px;
-        max-width: 100%;
-        background-position: left center;
-    }
-    .header .sub-desc{
-        top: 200px
-    }
-    .header .sub-desc h6{
-        font-size: 18px
-    }
-    .header .sub-desc h1{
-        font-size: 39px
-    }
-    .header .sub-desc p{
-        font-size: 15px
-    }
-    .header .sub-desc button{
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-    /* End Header*/
-
-
-    /* Start About Area */
-    .about-low-area{
-        padding: 20px;
-        height: 1070px;
-    }
-    .about-low-area .sec{
-        margin-top: 15px;
-    }
-    .about-low-area h4{
-        font-size: 18px;
-        padding-bottom: 8px
-    }
-    .about-low-area h3{
-        font-size: 25px;
-    }
-    .about-low-area .about-desc{
-        padding: 5px 0 20px;
-        font-size: 16px;
-    }
-    .about-low-area .about-img{
-        margin-top: 37px
-    }
-    .about-low-area .about-img img{
-        left: 0;
-        width: 100%
-    }   
-    .about-low-area .about-img .border-img{
-        margin: 20px 0;
-        transform: translateX(20px);
-        display: none
-    }
-    .about-low-area .col-lg-6 .row .col-md-6{
-        margin-bottom: 20px
-    }
-    .about-low-area .flat-icon{
-        color: #e2550f;
-        font-size: 40px;
-    }
-    .about-low-area .single-caption{
-        position: relative
-    }
-    .about-low-area .icon-caption{
-        font-size: 14px;
-        margin-left: 19px
-    }
-    /* End About Area */
-
-
-    /* Start Gallery */
-    .gallery .gallery-heading{
-        margin-top: 40px;
-    }
-    .gallery .tap-wrap .box-desc .gallery-desc{
-        top: 180px;
-        left: 52px
-    }
-    .gallery .gallery-heading h5{
-        font-size: 18px
-    }
-    .gallery .gallery-heading h2{
-        font-size: 25px;
-    }
-    .gallery ul li{
-        margin-left: 0;
-        font-size: 15px 
-    }
-    /* End Gallery */
-
-
-    /* Start About Area 2  */
-    .about-area-2 .img-container img{
-        width: 100%;
-    }
-    .about-area-2 .about-content{
-        padding: 40px 20px;
-    }
-    .about-area-2 .about-content h5{
-        font-size: 18px
-    }
-    .about-area-2 .about-content h3{
-        font-size: 24px
-    }
-    .about-area-2 .about-content p{
-        font-size: 16px
-    }
-    /* End About Area 2  */
-
-
-    /* Start Booking Area */
-    .booking-area .booking-area-heading{
-        padding-top: 40px;
-    }
-    .booking-area h5{
-        font-size: 18px
-    }
-    .booking-area h2{
-        font-size: 30px;
-        padding-bottom: 40px
-    }
-    .booking-area img{
-        width: 100%;
-        height: 100%;
-    }
-    .booking-area .appointment{
-        margin: 0;
-        width: 100%;
-        height: 350px
-    }
-    .booking-area .appointment form{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .booking-area .appointment select{
-        border: 1px solid #ccc;
-        width: 80%;
-        height: 60px;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        
-    }
-    .booking-area .appointment input[type="date"], 
-    .booking-area .appointment input[type="time"] {
-        border: 1px solid #ccc;
-        width: 80%;
-        border-radius: 4px;
-        padding: 16px 5px;
-        margin: 0 auto 10px;
-        
-    }
-    .booking-area .appointment a{
-        margin: 0px;
-        border-radius: 4px;
-
-    }
-    /* End Booking Area */
-
-    /* Start Services Responsive Section */
-    .services-area{
-        padding: 45px 0;
-    }
-    .services-area .services-content{
-        margin: 30px 0 0;
-    }
-    .services-area h5{
-        font-size: 18px;
-        padding-bottom: 15px
-    }
-    .services-area h2{
-        font-size: 24px
-    }
-    .services-area .services-desc p{
-        font-size: 15px;
-    }
-    
-    /* End Services Responsive Section */
-
-
-    /* Start About Area 3 */
-    .about-area-3 .about3-container{
-        margin-top: 40px;
-    }
-    .about-area-3 h5{
-        font-size: 18px
-    }
-    .about-area-3 h3{
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .about-area-3 form{
-        padding: 50px 0;
-    }
-    .about-area-3 form input[type="text"]{
-        border: 1px solid #ff5600;
-        width: 80%;
-    }
-    .about-area-3 form input[type="submit"]{
-        padding: 20px 5px;
-    }
-    /* End About Area 3 */
-
-    
-    /* Start News Area */
-    .news-area .news-heading{
-        padding: 40px 0;
-    }
-    .news-area h5{
-        font-size: 18px
-    }
-    .news-area h3{
-        font-size: 30px
-    }
-    .news-area .news-card{
-        margin-bottom: 90px
-    }
-    .news-area .news-card img{
-        width: 100%
-    }
-    .news-area .news-card .card-desc{
-        width: 70%;
-        left: 60px;
-    }
-    /* End News Area */
-
-
-    /* Start Footer Responsive Section */
-    footer .row{
-        padding-top: 40px;
-    }
-    footer .col-md-4 ul li img{
-        width: 80px
-    }
-    footer .logo{
-        padding-bottom: 30px
-    }
-    /* End Footer Responsive Section */
-
-}
 @media (min-width: 768px) {
     /* Start Navbar */
     .navbar .navbar-brand{
@@ -1832,4 +1834,4 @@ footer p{
 /* End Responsive Blog Details Page */
 
 
-/* End Resposive Website */ 
+/* End Resposive Website */
