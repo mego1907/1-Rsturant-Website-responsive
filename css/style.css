@@ -24,7 +24,15 @@ body{
     background-color: transparent;
     border-bottom: 1px solid #ccc
 }
-.navbar .navbar-toggler-icon{
+.navbar .navbar-toggler{
+    outline: none;
+    border: none;
+}
+.navbar .navbar-toggler .fa-bars{
+    font-size: 27px;
+    color: #e2550f;
+}
+.navbar .navbar-toggler:hover  .fa-bars{
     color: #0b1a2a;
 }
 .navbar .navbar-brand img{
@@ -97,6 +105,8 @@ body{
 
 
 /* Start Resposive Navbar */
+
+/* Mobile */
 @media (max-width: 767px) {
     .navbar .navbar-collapse{
         background-color: #0b1a2a;
@@ -128,6 +138,39 @@ body{
         margin: 8px;
     }
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .navbar .navbar-brand{
+        margin-left: -39px
+    }
+    .navbar .navbar-nav{
+        margin-right: 20px
+    }
+    .navbar .navbar-collapse .nav-item{
+        padding-left: 10px
+    }
+    .navbar .navbar-collapse .nav-item .nav-link{
+        letter-spacing: 0;
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .navbar .navbar-brand{
+        margin-left: 0;
+    }
+    .navbar .navbar-nav{
+        margin-right: 40px
+    }
+    .navbar .navbar-collapse .nav-item{
+        padding-left: 20px
+    }
+    .navbar .navbar-collapse .nav-item .nav-link{
+        letter-spacing: 1px;
+    }
+}
+
 /* End Navbar */
 
 
@@ -144,17 +187,8 @@ body{
     width: 100%;
     height: 100vh;
 }
-/* .header img{
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-} */
 .header .sub-desc{
     z-index: 9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 .header .sub-desc h6{
     color: #e2550f;
@@ -191,6 +225,8 @@ body{
 }
 
 /* Start Resposive header */
+
+/* Mobile */
 @media (max-width: 767px) {
     .header{
         background-image: url(../img/hero/bg-mobile.jpg);
@@ -209,6 +245,44 @@ body{
     }
     .header .sub-desc button{
         background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .header img{
+        height: 100%;
+        margin: 290px 0 100px;
+    }
+    .header .sub-desc{
+        top: 210px
+    }
+    .header .sub-desc h6{
+        font-size: 18px
+    }
+    .header .sub-desc h1{
+        font-size: 49px
+    }
+    .header .sub-desc p{
+        font-size: 16px;
+        padding-top: 30px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .header .sub-desc{
+        top: 300px
+    }
+    .header .sub-desc h6{
+        font-size: 20px
+    }
+    .header .sub-desc h1{
+        font-size: 70px
+    }
+    .header .sub-desc p{
+        font-size: 18px;
+        padding-top: 20px
     }
 }
 /* End Header */
@@ -283,6 +357,8 @@ body{
 }
 
 /* Start Resposive About Area */
+
+/* Mobile */
 @media (max-width: 767px) {
     .about-low-area{
         padding: 20px;
@@ -329,6 +405,89 @@ body{
         margin-left: 19px
     }
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .about-low-area{
+        padding-top: 20px;
+        height: auto;
+    }
+    .about-low-area .sec{
+        margin-top: 15px;
+    }
+    .about-low-area h4{
+        font-size: 18px;
+        padding-bottom: 8px
+    }
+    .about-low-area h3{
+        font-size: 48px;
+    }
+    .about-low-area .about-desc{
+        padding: 5px 0 20px;
+        font-size: 16px;
+    }
+    .about-low-area .about-img{
+        margin-top: 37px
+    }
+    .about-low-area img{
+        left: 135px;
+    }
+    .about-low-area .about-img .border-img{
+        margin: 20px 0;
+        transform: translateX(150px);
+    }
+    
+    .about-low-area .flat-icon{
+        font-size: 40px;
+        top: -9px;
+        left: -47px
+    }
+    .about-low-area .icon-caption{
+        font-size: 16px;
+        margin-left: 26px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    /* Start About Area */
+    .about-low-area{
+        padding-top: 20px;
+    }
+    .about-low-area .sec{
+        margin-top: 70px;
+    }
+    .about-low-area h4{
+        font-size: 20px;
+        padding-bottom: 10px
+    }
+    .about-low-area h3{
+        font-size: 47px;
+    }
+    .about-low-area .about-desc{
+        padding: 10px 0 30px;
+        font-size: 18px;
+    }
+    .about-low-area .about-img{
+        margin-top: 37px
+    }
+    .about-low-area img{
+        left: 0;
+    }
+    .about-low-area .about-img .border-img{
+        margin: 20px 0;
+        transform: translateX(3px);
+    }
+    .about-low-area .flat-icon{
+        font-size: 40px;
+    }
+    .about-low-area .icon-caption{
+        font-size: 14px;
+        margin-left: 26px
+    }
+}
+
+
 /* End About Area */
 
 
@@ -398,6 +557,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
 .tap-wrap .box .box-desc{
@@ -405,8 +568,6 @@ body{
     position: relative;
 }
 .tap-wrap .box-desc .gallery-desc{
-    position: absolute;
-    top: 150px;
     padding: 17px;
     transition: all 0.2s linear;
     opacity: 0;
@@ -445,15 +606,15 @@ body{
 }
 .tap-wrap .box:hover .box-desc .gallery-desc{
     opacity: 1;
-    animation: animateTop 0.5s ;
+    animation: animateTop 0.5s;
 }
 @keyframes animateTop{
     from{
-        top: 250px;
+        transform: translateY(250px);
         opacity: 0;
     }
     to{
-        top: 150px;
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -512,6 +673,7 @@ body{
 }
 
 /* Start Resposive Gallery */
+/* Mobile */
 @media (max-width: 767px) {
     .gallery .gallery-heading{
         margin-top: 40px;
@@ -532,6 +694,24 @@ body{
         padding: 8px 14px; 
     }
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .gallery .tap-wrap .box-desc .gallery-desc{
+        top: 170px;
+        left: 230px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .gallery .tap-wrap .box-desc .gallery-desc{
+        top: 150px;
+        left: 0
+    }
+}
+
+
 /* End Gallery */
 
 
@@ -589,6 +769,7 @@ body{
 }
 
 /* Start Responsive About Area 2 */
+/* Mobile */
 @media (max-width: 767px) {
     .about-area-2 .img-container img{
         width: 100%;
@@ -604,6 +785,34 @@ body{
     }
     .about-area-2 .about-content p{
         font-size: 16px
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    /* Start About Area 2  */
+    .about-area-2 .img-container img{
+        width: 100%;
+    }
+    .about-area-2 .about-content h3{
+        font-size: 38px
+    }
+    .about-area-2 .about-content p{
+        font-size: 16px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    /* Start About Area 2  */
+    .about-area-2 .img-container img{
+        width: 100%;
+    }
+    .about-area-2 .about-content h3{
+        font-size: 47px
+    }
+    .about-area-2 .about-content p{
+        font-size: 18px
     }
 }
 /* End About area 2 */
@@ -680,6 +889,7 @@ body{
 
 
 /* Start Resposive Booking Area */
+/* Mobile */
 @media (max-width: 767px) {
     .booking-area .booking-area-heading{
         padding-top: 40px;
@@ -726,6 +936,70 @@ body{
     .booking-area .appointment a{
         margin: 0px;
         border-radius: 4px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .booking-area img{
+        width: 100%;
+        height: 100%;
+    }
+    .booking-area .appointment{
+        margin: 60px 0;
+        width: 100%
+    }
+    .booking-area .appointment form{
+        width:100%
+    }
+    .booking-area .appointment select{
+        border: 1px solid #ccc;
+        height: 65px;
+    }
+    .booking-area .appointment input[type="date"], 
+    .booking-area .appointment input[type="time"] {
+        border: 1px solid #ccc;
+        padding: 16px 9px;
+        margin: 0 0 0 25px;
+        width: 200px;
+        border-radius: 4px
+    }
+    .booking-area .appointment a{
+        padding: 20px 20px;
+        margin: 0 0 0 10px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .booking-area img{
+        width: 100%;
+        height: 100%;
+    }
+    .booking-area .appointment{
+        margin: 60px 50px;
+        width: 90%
+    }
+    .booking-area .appointment form{
+        width:100%
+    }
+    .booking-area .appointment select{
+        border: none;
+        width: 250px;
+        height: 65px;
+        padding: 0 30px
+    }
+    .booking-area .appointment input[type="date"], 
+    .booking-area .appointment input[type="time"] {
+        border: none;
+        padding: 16px 9px;
+        margin: 0 0 0 25px;
+        width: 250px;
+        border-radius: 4px
+    }
+    .booking-area .appointment a{
+        padding: 20px 20px;
+        margin-bottom: 10px
     }
 }
 /* End booking Area */
@@ -818,23 +1092,26 @@ body{
     padding: 14px 0;
 }
 .about-area-3 form input[type="text"]{
-    padding: 17px 5px;
+    padding: 17px 10px;
     font-size: 18px;
     width: 70%;
     border: none;
+    outline: none;
 }
 .about-area-3 form input[type="submit"]{
     padding: 20px 26px;
     border: none;
     background-color: #e2550f;
     color: #fff;
-    position: absolute
+    position: absolute;
+    outline: none;
 }
 .about-area-3 form input::placeholder{
     padding-left: 10px
 }
 
 /* Start Resposive About Area 3 */
+/* Mobile */
 @media (max-width: 767px) {
     .about-area-3 .about3-container{
         margin-top: 40px;
@@ -855,6 +1132,42 @@ body{
     }
     .about-area-3 form input[type="submit"]{
         padding: 20px 5px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .about-area-3 .about3-container{
+        margin-top: 80px
+    }
+    .about-area-3 h3{
+        font-size: 38px;
+    }
+    .about-area-3 form{
+        padding: 50px
+    }
+    .about-area-3 form input[type="text"]{
+        border: 1px solid #ff5600;
+        width: 100%;
+        margin-left: -50px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .about-area-3 .about3-container{
+        margin-top: 80px
+    }
+    .about-area-3 h3{
+        font-size: 38px;
+    }
+    .about-area-3 form{
+        padding: 50px
+    }
+    .about-area-3 form input[type="text"]{
+        border: none;
+        width: 100%;
+        margin-left: -50px
     }
 }
 /* End About Area 3 */
@@ -916,6 +1229,7 @@ body{
 }
 
 /* Start Resposive News Area */
+/* Mobile */
 @media (max-width: 767px) {
     .news-area .news-heading{
         padding: 40px 0;
@@ -936,6 +1250,33 @@ body{
         width: 70%;
         left: 60px;
     }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .news-area .news-card{
+        margin-bottom: 90px
+    }
+    .news-area .news-card .card-desc{
+        width: 75%;
+    }
+    .news-area .news-card:last-of-type .card-desc{
+        width: 40%;
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .news-area .news-card{
+        margin-bottom: 90px
+    }
+    .news-area .news-card .card-desc{
+        width: 75%;
+    }
+    .news-area .news-card:last-of-type .card-desc{
+        width: 75%;
+    }
+}
 /* End News Area */
 
 
@@ -981,6 +1322,7 @@ footer p{
 }
 
 /* Start Resposive Footer */
+/* Mobile */
 @media (max-width: 767px) {
     footer .row{
         padding-top: 40px;
@@ -990,6 +1332,13 @@ footer p{
     }
     footer .logo{
         padding-bottom: 30px
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    footer img{
+        width: 90px
     }
 }
 /* End Footer Section */
@@ -1023,7 +1372,18 @@ footer p{
     transform: translateY(3px);
     background-color: #ff5600
 }
+
+/* Start Resposive About Page */
+@media (max-width: 767px) {
+    .hero-about{
+        background-image: url(../img/hero/bg-mobile.jpg);
+        background-size: cover;
+        background-position: right center;
+        margin: 0;
+    }
+}
 /* End About Page */
+
 
 
 /* Start Menu Page */
@@ -1031,6 +1391,7 @@ footer p{
     margin-top: 60px
 }
 /* End Menu Page */
+
 
 
 /* Start Blog Page */
@@ -1089,13 +1450,15 @@ footer p{
 .blog-area aside form .search-box input{
     padding: 11px 21px;
     border: 1px solid rgba(0,0,0,0.2);
-    display: inline-block
+    display: inline-block;
+    outline: none;
 }
 .blog-area aside form .search-box button{
     padding: 13px 15px;
     color: #fff;
     background-color: #ff5600;
     border: none;
+    outline: none;
 }
 .blog-area aside form .s-btn{
     width: 100%;
@@ -1106,6 +1469,7 @@ footer p{
     color: #ff5600;
     font-size: 18px;
     transition: all 0.3s ease-in-out;
+    outline: none;
 }
 .blog-area aside form .s-btn:hover{
     background-color: #ff5600;
@@ -1215,7 +1579,8 @@ footer p{
     width: 100%;
     padding: 10px 6px;
     border: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    outline: none;
 }
 .blog-area aside .newsletter-section form a{
     border: 1px solid #ff5600;
@@ -1230,7 +1595,55 @@ footer p{
 .blog-area{
     margin-bottom: 70px
 }
+
+/* Start Responsive Blog Page */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .blog-area .blog-item .blog-item-img img{
+        width: 100%;
+        height: 100%
+    }
+    .blog-area .blog-item .blog-item-img span{
+        padding: 10px 15px; 
+    }
+    .blog-area .blog-item .blog-item-img span h3{
+        font-size: 18px
+    }
+    .blog-area .blog-item .blog-item-img span p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .blog-area aside form .search-box input{
+        width: 100%;
+    }
+    .blog-area .newsletter-section{
+        padding-bottom: 20px
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .blog-area .row{
+        overflow: hidden
+    }
+    .blog-area aside form .search-box input{
+        width: 100%
+    }
+    .blog-area .newsletter-section{
+        padding-bottom: 20px
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .blog-area .blog-item .blog-item-img img{
+        width: 100%;
+        height: 100%
+    }
+}
 /* End Blog Page */
+
 
 
 
@@ -1352,7 +1765,21 @@ footer p{
     line-height: 1.7;
     color: #0b1a2ac4;
 }
+
+/* Start Responsive Blog Details Page */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .blog-area{
+        overflow: hidden;
+    }
+    .blog-area aside .newsletter-section form a{
+        padding: 15px 78px;
+    }
+}
 /* End Blog Details Section */
+
+
 
 
 /* Start Contact Page */
@@ -1401,437 +1828,11 @@ footer p{
     border: 1px solid #ff5600;
     background-color: transparent;
 }
+
 /* Start Map Section */
 .map-section {
     margin: 50px 0;
 }
 /* End Map Section */
+
 /* End Contact Page */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {
-    /* Start Navbar */
-    .navbar .navbar-brand{
-        margin-left: -39px
-    }
-    .navbar .navbar-nav{
-        margin-right: 20px
-    }
-    .navbar .navbar-collapse .nav-item{
-        padding-left: 10px
-    }
-    .navbar .navbar-collapse .nav-item .nav-link{
-        letter-spacing: 0;
-    }
-    /* End Navbar*/
-
-
-    /* Start Header*/
-    .header img{
-        height: 100%;
-        margin: 290px 0 100px;
-    }
-    .header .sub-desc{
-        top: 210px
-    }
-    .header .sub-desc h6{
-        font-size: 18px
-    }
-    .header .sub-desc h1{
-        font-size: 49px
-    }
-    .header .sub-desc p{
-        font-size: 16px;
-        padding-top: 30px
-    }
-    /* End Header*/
-
-
-    /* Start About Area */
-    .about-low-area{
-        padding-top: 20px;
-        height: auto;
-    }
-    .about-low-area .sec{
-        margin-top: 15px;
-    }
-    .about-low-area h4{
-        font-size: 18px;
-        padding-bottom: 8px
-    }
-    .about-low-area h3{
-        font-size: 48px;
-    }
-    .about-low-area .about-desc{
-        padding: 5px 0 20px;
-        font-size: 16px;
-    }
-    .about-low-area .about-img{
-        margin-top: 37px
-    }
-    .about-low-area img{
-        left: 135px;
-    }
-    .about-low-area .about-img .border-img{
-        margin: 20px 0;
-        transform: translateX(150px);
-    }
-    
-    .about-low-area .flat-icon{
-        font-size: 40px;
-        top: -9px;
-        left: -47px
-    }
-    .about-low-area .icon-caption{
-        font-size: 16px;
-        margin-left: 26px
-    }
-    /* End About Area */
-
-
-    /* Start Gallery */
-    .gallery .tap-wrap .box-desc .gallery-desc{
-        top: 170px;
-        left: 230px
-    }
-    /* End Gallery */
-
-
-    /* Start About Area 2  */
-    .about-area-2 .img-container img{
-        width: 100%;
-    }
-    .about-area-2 .about-content h3{
-        font-size: 38px
-    }
-    .about-area-2 .about-content p{
-        font-size: 16px
-    }
-    /* End About Area 2  */
-
-
-    /* Start Booking Area */
-    .booking-area img{
-        width: 100%;
-        height: 100%;
-    }
-    .booking-area .appointment{
-        margin: 60px 0;
-        width: 100%
-    }
-    .booking-area .appointment form{
-        width:100%
-    }
-    .booking-area .appointment select{
-        border: 1px solid #ccc;
-        height: 65px;
-    }
-    .booking-area .appointment input[type="date"], 
-    .booking-area .appointment input[type="time"] {
-        border: 1px solid #ccc;
-        padding: 16px 9px;
-        margin: 0 0 0 25px;
-        width: 200px;
-        border-radius: 4px
-    }
-    .booking-area .appointment a{
-        padding: 20px 20px;
-        margin: 0 0 0 10px
-    }
-    /* End Booking Area */
-
-
-    /* Start About Area 3 */
-    .about-area-3 .about3-container{
-        margin-top: 80px
-    }
-    .about-area-3 h3{
-        font-size: 38px;
-    }
-    .about-area-3 form{
-        padding: 50px
-    }
-    .about-area-3 form input[type="text"]{
-        border: 1px solid #ff5600;
-        width: 100%;
-        margin-left: -50px
-    }
-    /* End About Area 3 */
-
-    
-    /* Start News Area */
-    .news-area .news-card{
-        margin-bottom: 90px
-    }
-    .news-area .news-card .card-desc{
-        width: 75%;
-    }
-    .news-area .news-card:last-of-type .card-desc{
-        width: 40%;
-    }
-    /* End News Area */
-
-
-    /* Start Footer */
-    footer img{
-        width: 90px
-    }
-    /* End Footer */
-
-}
-@media (min-width: 992px) {
-    /* Start Navbar */
-    .navbar .navbar-brand{
-        margin-left: 0;
-    }
-    .navbar .navbar-nav{
-        margin-right: 40px
-    }
-    .navbar .navbar-collapse .nav-item{
-        padding-left: 20px
-    }
-    .navbar .navbar-collapse .nav-item .nav-link{
-        letter-spacing: 1px;
-    }
-    /* End Navbar*/
-
-
-    /* Start Header*/
-    .header .sub-desc{
-        top: 300px
-    }
-    .header .sub-desc h6{
-        font-size: 20px
-    }
-    .header .sub-desc h1{
-        font-size: 70px
-    }
-    .header .sub-desc p{
-        font-size: 18px;
-        padding-top: 20px
-    }
-    /* End Header*/
-
-
-    /* Start About Area */
-    .about-low-area{
-        padding-top: 20px;
-    }
-    .about-low-area .sec{
-        margin-top: 70px;
-    }
-    .about-low-area h4{
-        font-size: 20px;
-        padding-bottom: 10px
-    }
-    .about-low-area h3{
-        font-size: 47px;
-    }
-    .about-low-area .about-desc{
-        padding: 10px 0 30px;
-        font-size: 18px;
-    }
-    .about-low-area .about-img{
-        margin-top: 37px
-    }
-    .about-low-area img{
-        left: 0;
-    }
-    .about-low-area .about-img .border-img{
-        margin: 20px 0;
-        transform: translateX(3px);
-    }
-    .about-low-area .flat-icon{
-        font-size: 40px;
-    }
-    .about-low-area .icon-caption{
-        font-size: 14px;
-        margin-left: 26px
-    }
-    /* End About Area */
-
-
-    /* Start Gallery */
-    .gallery .tap-wrap .box-desc .gallery-desc{
-        top: 150px;
-        left: 0
-    }
-    /* End Gallery */
-
-
-    /* Start About Area 2  */
-    .about-area-2 .img-container img{
-        width: 100%;
-    }
-    .about-area-2 .about-content h3{
-        font-size: 47px
-    }
-    .about-area-2 .about-content p{
-        font-size: 18px
-    }
-    /* End About Area 2  */
-
-
-    /* Start Booking Area */
-    .booking-area img{
-        width: 100%;
-        height: 100%;
-    }
-    .booking-area .appointment{
-        margin: 60px 50px;
-        width: 90%
-    }
-    .booking-area .appointment form{
-        width:100%
-    }
-    .booking-area .appointment select{
-        border: none;
-        width: 250px;
-        height: 65px;
-        padding: 0 30px
-    }
-    .booking-area .appointment input[type="date"], 
-    .booking-area .appointment input[type="time"] {
-        border: none;
-        padding: 16px 9px;
-        margin: 0 0 0 25px;
-        width: 250px;
-        border-radius: 4px
-    }
-    .booking-area .appointment a{
-        padding: 20px 20px;
-        margin-bottom: 10px
-    }
-    /* End Booking Area */
-
-
-    /* Start About Area 3 */
-    .about-area-3 .about3-container{
-        margin-top: 80px
-    }
-    .about-area-3 h3{
-        font-size: 38px;
-    }
-    .about-area-3 form{
-        padding: 50px
-    }
-    .about-area-3 form input[type="text"]{
-        border: none;
-        width: 100%;
-        margin-left: -50px
-    }
-    /* End About Area 3 */
-
-    
-    /* Start News Area */
-    .news-area .news-card{
-        margin-bottom: 90px
-    }
-    .news-area .news-card .card-desc{
-        width: 75%;
-    }
-    .news-area .news-card:last-of-type .card-desc{
-        width: 75%;
-    }
-    /* End News Area */
-
-
-    
-}
-
-
-
-
-
-/* Start Resposive About Page */
-@media (max-width: 767px) {
-    .hero-about{
-        background-image: url(../img/hero/bg-mobile.jpg);
-        background-size: cover;
-        background-position: right center;
-        margin: 0;
-    }
-}
-/* End Resposive About Page */
-
-/* Start Responsive Blog Page */
-@media (max-width: 767px) {
-    .blog-area .blog-item .blog-item-img img{
-        width: 100%;
-        height: 100%
-    }
-    .blog-area .blog-item .blog-item-img span{
-        padding: 10px 15px; 
-    }
-    .blog-area .blog-item .blog-item-img span h3{
-        font-size: 18px
-    }
-    .blog-area .blog-item .blog-item-img span p{
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-    .blog-area aside form .search-box input{
-        width: 100%;
-    }
-    .blog-area .newsletter-section{
-        padding-bottom: 20px
-    }
-}
-@media (min-width: 768px) {
-    .blog-area .row{
-        overflow: hidden
-    }
-    .blog-area aside form .search-box input{
-        width: 100%
-    }
-    .blog-area .newsletter-section{
-        padding-bottom: 20px
-    }
-}
-@media (min-width: 992px) {
-    .blog-area .blog-item .blog-item-img img{
-        width: 100%;
-        height: 100%
-    }
-}
-/* End Responsive Blog Page */
-
-/* Start Responsive Blog Details Page */
-@media (max-width: 767px) {
-    .blog-area{
-        overflow: hidden;
-    }
-    .blog-area aside .newsletter-section form a{
-        padding: 15px 78px;
-    }
-}
-/* End Responsive Blog Details Page */
-
-
-/* End Resposive Website */
